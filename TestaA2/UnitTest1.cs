@@ -12,32 +12,19 @@ namespace TestaA2
         [Test]
         public void Test_AnalyzeTriangle_inpput25and25and25_EQUILATERAL()
         {   // 1 A
-            int input1 = 25;
-            int input2 = 25;
-            int input3 = 25;
+            int input1 = 30;
+            int input2 = 30;
+            int input3 = 30;
             String expectResult = "The triangle is valid and is an EQUILATERAL";
 
             // 2 A
             string ret = Triangle.AnalyzeTriangle(input1, input2, input3);
-
+            Console.WriteLine(ret);
             //3 A
             StringAssert.AreEqualIgnoringCase(expectResult,ret);
         }
 
-        [Test]
-        public void Test_AnalyzeTriangle_inpput25and25and25_EQUILATERAL()
-        {   // 1 A
-            int input1 = 25;
-            int input2 = 25;
-            int input3 = 25;
-            String expectResult = "The triangle is valid and is an EQUILATERAL";
-
-            // 2 A
-            string ret = Triangle.AnalyzeTriangle(input1, input2, input3);
-
-            //3 A
-            StringAssert.AreEqualIgnoringCase(expectResult, ret);
-        }
+      
        
     }
 }
