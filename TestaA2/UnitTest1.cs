@@ -12,9 +12,9 @@ namespace TestaA2
         [Test]
         public void Test_AnalyzeTriangle_inpput25and25and25_EQUILATERAL()
         {   // 1 A
-            int input1 = 30;
-            int input2 = 30;
-            int input3 = 30;
+            int input1 = 40;
+            int input2 = 40;
+            int input3 = 40;
             String expectResult = "The triangle is valid and is an EQUILATERAL";
 
             // 2 A
