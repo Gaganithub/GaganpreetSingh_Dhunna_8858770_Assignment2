@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using TriangleSolver;
 
 namespace TestaA2
@@ -8,7 +7,7 @@ namespace TestaA2
     {
 
         [Test]                  //Test 1 EQUILATERAL
-        public void Test_AnalyzeTriangle_inpput40and40and40_EQUILATERAL()
+        public void Test_AnalyzeTriangle_inpput40and40and40_Equilateral()
         {   // 1 Arrange
             int side_one = 40;
             int side_second = 40;
@@ -24,7 +23,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 1 for ISOSCELE
-        public void Test_AnalyzeTriangle_inpput60and60and70_ISOSCELES()
+        public void Test_AnalyzeTriangle_inpput60and60and70_IsosceleTest1()
         {   // 1 Arrange
             int side_one = 60;
             int side_second = 60;
@@ -41,7 +40,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 2 for ISOSCELE
-        public void Test_AnalyzeTriangle_inpput45and80and45_ISOSCELES()
+        public void Test_AnalyzeTriangle_inpput45and80and45_IsosceleTest2()
         {   // 1 Arrange
             int side_one = 45;
             int side_second = 80;
@@ -58,7 +57,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 3 for ISOSCELE
-        public void Test_AnalyzeTriangle_inpput27and20and20_ISOSCELES()
+        public void Test_AnalyzeTriangle_inpput27and20and20_IsosceleTest3()
         {   // 1 Arrange
             int side_one = 27;
             int side_second = 20;
@@ -75,7 +74,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 1 for SCALENE
-        public void Test_AnalyzeTriangle_inpput23and35and26_SCALENE()
+        public void Test_AnalyzeTriangle_inpput23and35and26_ScaleneTest1()
         {   // 1 Arrange
             int side_one = 23;
             int side_second = 35;
@@ -93,7 +92,7 @@ namespace TestaA2
 
 
         [Test]                  //Test 2 for SCALENE
-        public void Test_AnalyzeTriangle_inpput290and340and520_SCALENE()
+        public void Test_AnalyzeTriangle_inpput290and340and520_ScaleneTest2()
         {   // 1 Arrange
             int side_one = 290;
             int side_second = 340;
@@ -110,7 +109,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 3 for SCALENE
-        public void Test_AnalyzeTriangle_inpput53and25and56_SCALENE()
+        public void Test_AnalyzeTriangle_inpput53and25and56_ScaleneTest3()
         {   // 1 Arrange
             int side_one = 53;
             int side_second = 25;
@@ -127,7 +126,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 4 for SCALENE
-        public void Test_AnalyzeTriangle_inpput140and75and90_SCALENE()
+        public void Test_AnalyzeTriangle_inpput140and75and90_ScaleneTest4()
         {   // 1 Arrange
             int side_one = 140;
             int side_second = 75;
@@ -143,7 +142,7 @@ namespace TestaA2
 
         }
         [Test]                  //Test 5 for SCALENE
-        public void Test_AnalyzeTriangle_inpput390and450and260_SCALENE()
+        public void Test_AnalyzeTriangle_inpput390and450and260_ScaleneTest5()
         {   // 1 Arrange
             int side_one = 390;
             int side_second = 450;
@@ -160,7 +159,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 1 for ZERO LENGTH 
-        public void Test_AnalyzeTriangle_inpput0and60and78_ZEROLENGTHSIDE()
+        public void Test_AnalyzeTriangle_inpput0and60and78_ZerolengthsideTest1()
         {   // 1 Arrange
             int side_one = 0;
             int side_second = 60;
@@ -176,7 +175,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 2 for ZERO LENGTH 
-        public void Test_AnalyzeTriangle_inpput0and90and0_ZEROLENGTHSIDE()
+        public void Test_AnalyzeTriangle_inpput0and90and0_ZerolengthsideTest2()
         {   // 1 Arrange
             int side_one = 0;
             int side_second = 90;
@@ -193,7 +192,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 3 for ZERO LENGTH 
-        public void Test_AnalyzeTriangle_inpput43and25and0_ZEROLENGTHSIDE()
+        public void Test_AnalyzeTriangle_inpput43and25and0_ZerolengthsideTest3()
         {   // 1 Arrange
             int side_one = 43;
             int side_second = 25;
@@ -209,7 +208,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 1 for AN INVALID RESPONSE
-        public void Test_AnalyzeTriangle_inpput10and22and34_INVALIDRESPONSE()
+        public void Test_AnalyzeTriangle_inpput10and22and34_InvalidResponseTest1()
         {   // 1 Arrange
             int side_one = 10;
             int side_second = 22;
@@ -226,7 +225,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 2 for AN INVALID RESPONSE
-        public void Test_AnalyzeTriangle_inpput90and40and28_INVALIDRESPONSE()
+        public void Test_AnalyzeTriangle_inpput90and40and28_InvalidResponseTest2()
         {   // 1 Arrange
             int side_one = 90;
             int side_second = 40;
@@ -243,7 +242,7 @@ namespace TestaA2
         }
 
         [Test]                  //Test 3 for AN INVALID RESPONSE
-        public void Test_AnalyzeTriangle_inpput10and20and40_INVALIDRESPONSE()
+        public void Test_AnalyzeTriangle_inpput10and20and40_InvalidResponseTest3()
         {   // 1 Arrange
             int side_one = 10;
             int side_second = 20;
