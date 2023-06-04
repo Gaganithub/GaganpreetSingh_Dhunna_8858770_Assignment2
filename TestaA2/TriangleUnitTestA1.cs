@@ -159,7 +159,7 @@ namespace TestaA2
 
         }
 
-        [Test]                  //Test 1 for ZERO LENGTH THUS INVALID
+        [Test]                  //Test 1 for ZERO LENGTH 
         public void Test_AnalyzeTriangle_inpput0and60and78_ZEROLENGTHSIDE()
         {   // 1 Arrange
             int side_one = 0;
@@ -175,7 +175,7 @@ namespace TestaA2
             Assert.AreEqual(expectResult, actResult);
         }
 
-        [Test]                  //Test 2 for ZERO LENGTH THUS INVALID
+        [Test]                  //Test 2 for ZERO LENGTH 
         public void Test_AnalyzeTriangle_inpput0and90and0_ZEROLENGTHSIDE()
         {   // 1 Arrange
             int side_one = 0;
@@ -192,7 +192,7 @@ namespace TestaA2
 
         }
 
-        [Test]                  //Test 3 for ZERO LENGTH THUS INVALID
+        [Test]                  //Test 3 for ZERO LENGTH 
         public void Test_AnalyzeTriangle_inpput43and25and0_ZEROLENGTHSIDE()
         {   // 1 Arrange
             int side_one = 43;
@@ -206,8 +206,58 @@ namespace TestaA2
 
             //3 Assert
             Assert.AreEqual(expectResult, actResult);
+        }
 
+        [Test]                  //Test 1 for AN INVALID RESPONSE
+        public void Test_AnalyzeTriangle_inpput10and22and34_INVALIDRESPONSE()
+        {   // 1 Arrange
+            int side_one = 10;
+            int side_second = 22;
+            int side_third = 34;
+            String expectResult = "A triangle cannot be formed with those numbers";
+
+            // 2 Act 
+            string actResult = Triangle.AnalyzeTriangle(side_one, side_second, side_third);
+            Console.WriteLine(actResult);
+
+            //3 Assert
+            Assert.AreEqual(expectResult, actResult);
 
         }
+
+        [Test]                  //Test 2 for AN INVALID RESPONSE
+        public void Test_AnalyzeTriangle_inpput90and40and28_INVALIDRESPONSE()
+        {   // 1 Arrange
+            int side_one = 90;
+            int side_second = 40;
+            int side_third = 28;
+            String expectResult = "A triangle cannot be formed with those numbers";
+
+            // 2 Act 
+            string actResult = Triangle.AnalyzeTriangle(side_one, side_second, side_third);
+            Console.WriteLine(actResult);
+
+            //3 Assert
+            Assert.That(actResult, Is.EqualTo(expectResult));
+
+        }
+
+        [Test]                  //Test 3 for AN INVALID RESPONSE
+        public void Test_AnalyzeTriangle_inpput10and20and40_INVALIDRESPONSE()
+        {   // 1 Arrange
+            int side_one = 10;
+            int side_second = 20;
+            int side_third = 40;
+            String expectResult = "A triangle cannot be formed with those numbers";
+
+            // 2 Act 
+            string actResult = Triangle.AnalyzeTriangle(side_one, side_second, side_third);
+            Console.WriteLine(actResult);
+
+            //3 Assert
+            Assert.AreEqual(expectResult, actResult);
+
+        }
+
     }
 }
