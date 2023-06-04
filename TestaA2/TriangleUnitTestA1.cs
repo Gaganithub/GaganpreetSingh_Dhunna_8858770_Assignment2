@@ -87,11 +87,11 @@ namespace TestaA2
             Console.WriteLine(actResult);
 
             //3 Assert
-           Assert.AreEqual(expectResult, actResult);
+            Assert.AreEqual(expectResult, actResult);
 
         }
 
-     
+
         [Test]                  //Test 2 for SCALENE
         public void Test_AnalyzeTriangle_inpput290and340and520_SCALENE()
         {   // 1 Arrange
@@ -159,7 +159,55 @@ namespace TestaA2
 
         }
 
-    }
+        [Test]                  //Test 1 for ZERO LENGTH THUS INVALID
+        public void Test_AnalyzeTriangle_inpput0and60and78_ZEROLENGTHSIDE()
+        {   // 1 Arrange
+            int side_one = 0;
+            int side_second = 60;
+            int side_third = 78;
+            String expectResult = "At least one side of your triangle has a zero length and is thus invalid";
 
-       
+            // 2 Act 
+            string actResult = Triangle.AnalyzeTriangle(side_one, side_second, side_third);
+            Console.WriteLine(actResult);
+
+            //3 Assert
+            Assert.AreEqual(expectResult, actResult);
+        }
+
+        [Test]                  //Test 2 for ZERO LENGTH THUS INVALID
+        public void Test_AnalyzeTriangle_inpput0and90and0_ZEROLENGTHSIDE()
+        {   // 1 Arrange
+            int side_one = 0;
+            int side_second = 90;
+            int side_third = 0;
+            String expectResult = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // 2 Act 
+            string actResult = Triangle.AnalyzeTriangle(side_one, side_second, side_third);
+            Console.WriteLine(actResult);
+
+            //3 Assert
+            Assert.AreEqual(expectResult, actResult);
+
+        }
+
+        [Test]                  //Test 3 for ZERO LENGTH THUS INVALID
+        public void Test_AnalyzeTriangle_inpput43and25and0_ZEROLENGTHSIDE()
+        {   // 1 Arrange
+            int side_one = 43;
+            int side_second = 25;
+            int side_third = 0;
+            String expectResult = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // 2 Act 
+            string actResult = Triangle.AnalyzeTriangle(side_one, side_second, side_third);
+            Console.WriteLine(actResult);
+
+            //3 Assert
+            Assert.AreEqual(expectResult, actResult);
+
+
+        }
+    }
 }
